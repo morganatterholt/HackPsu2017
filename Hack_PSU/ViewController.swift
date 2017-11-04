@@ -25,6 +25,12 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "2Psych_Quiz", sender: self)
     }
     
+    @IBAction func Physics_Quiz(_ sender: Any)
+    {
+        performSegue(withIdentifier: "2Physics_Quiz", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
