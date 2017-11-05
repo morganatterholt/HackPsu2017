@@ -257,6 +257,8 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="4dN-VP-h5F"/>
+                                    <action selector="final1:" destination="lG7-xa-U75" eventType="touchUpInside" id="Ac8-Ij-FUX"/>
+                                    <segue destination="hDo-fj-0DT" kind="show" identifier="final" id="g6o-Cd-oo8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGU-p3-zEd">
@@ -279,6 +281,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CT-gw-tgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="-314.39280359820094"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hOL-3i-4Je">
+            <objects>
+                <viewController id="hDo-fj-0DT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24z-B5-K10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-uf-OgF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watson Discovery API returned that your answer regarding &quot;wings&quot; and &quot;lift&quot; was a .89 confidence level." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQY-ZE-r6D">
+                                <rect key="frame" x="11" y="104" width="348" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hPX-BW-wMw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7h-bo-fgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.8000000000002" y="-267.61619190404798"/>
         </scene>
     </scenes>
     <resources>

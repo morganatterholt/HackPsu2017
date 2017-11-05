@@ -14,7 +14,10 @@ class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var PsychQuestion: UILabel!
     @IBOutlet weak var PsychAnswer: UITextField!
     
-   
+    @IBAction func final1(_ sender: Any) {
+        performSegue(withIdentifier: "final", sender: self)
+    }
+    
     @IBAction func PsychSubmit(_ sender: Any) {
         
         let responsePsych = PsychAnswer.text!
