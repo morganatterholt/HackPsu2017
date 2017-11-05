@@ -13,7 +13,7 @@ import ARKit
 class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var PsychQuestion: UILabel!
     @IBOutlet weak var PsychAnswer: UITextField!
-<<<<<<< HEAD
+
     /*@IBAction func PsychSubmit(_ sender: Any)
     {
         var responsePsych = PsychAnswer.text!
@@ -24,13 +24,13 @@ class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     {
         let responsePsych = PsychAnswer.text!
         //post_request
-=======
+
     
    
     @IBAction func PsychSubmit(_ sender: Any) {
         
         let responsePsych = PsychAnswer.text!
->>>>>>> 934d6b003de2e19ea0e0febcd03925911214ec76
+
         print(responsePsych)
     }
     
