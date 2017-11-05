@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import "Package.swift"
 class Physics_Quiz: UIViewController {
     @IBOutlet weak var PhysicsQuestion: UILabel!
     @IBOutlet weak var PhysicsAnswer: UITextField!
