@@ -30,6 +30,9 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "2Physics_Quiz", sender: self)
     }
     
+    @IBAction func DIscovery_Psych(_ sender: Any) {
+        performSegue(withIdentifier: "2Discovery_Psych", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

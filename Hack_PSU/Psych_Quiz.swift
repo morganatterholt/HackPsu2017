@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import "Package.swift"
+
 class Psych_Quiz: UIViewController {
     @IBOutlet weak var PsychQuestion: UILabel!
     @IBOutlet weak var PsychAnswer: UITextField!
@@ -15,12 +15,14 @@ class Psych_Quiz: UIViewController {
     {
         var responsePsych = PsychAnswer.text!
         //post_request
-        
+        let myURL = URL(string: "https://12temp12.mybluemix.net/red/#flow/deb0d57.1c46528")
+        var request = URLRequest(url:myURL!)
+        request.httpMethod = "POST"
+        let postString = responsePsych
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

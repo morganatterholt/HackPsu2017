@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		10C7AFB21FAEBA9A0063A892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C7AFB11FAEBA9A0063A892 /* Assets.xcassets */; };
-		10C7B03E1FAEBDAE0063A892 /* swift-sdk in Resources */ = {isa = PBXBuildFile; fileRef = 10C7B03D1FAEBDAE0063A892 /* swift-sdk */; };
 		902491951FAE6C3700AE5055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902491941FAE6C3700AE5055 /* AppDelegate.swift */; };
 		902491971FAE6C3700AE5055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902491961FAE6C3700AE5055 /* ViewController.swift */; };
 		9024919A1FAE6C3700AE5055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 902491981FAE6C3700AE5055 /* Main.storyboard */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		10C7AFB11FAEBA9A0063A892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		10C7B03D1FAEBDAE0063A892 /* swift-sdk */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "swift-sdk"; sourceTree = "<group>"; };
 		902491911FAE6C3700AE5055 /* Hack_PSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack_PSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		902491941FAE6C3700AE5055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		902491961FAE6C3700AE5055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 				902491981FAE6C3700AE5055 /* Main.storyboard */,
 				9024919D1FAE6C3700AE5055 /* LaunchScreen.storyboard */,
 				902491A01FAE6C3700AE5055 /* Info.plist */,
-				10C7B03D1FAEBDAE0063A892 /* swift-sdk */,
 			);
 			path = Hack_PSU;
 			sourceTree = "<group>";
@@ -139,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9024919F1FAE6C3700AE5055 /* LaunchScreen.storyboard in Resources */,
-				10C7B03E1FAEBDAE0063A892 /* swift-sdk in Resources */,
 				10C7AFB21FAEBA9A0063A892 /* Assets.xcassets in Resources */,
 				9024919A1FAE6C3700AE5055 /* Main.storyboard in Resources */,
 			);

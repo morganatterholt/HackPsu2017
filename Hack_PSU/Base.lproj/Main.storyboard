@@ -171,6 +171,7 @@
                                 <color key="backgroundColor" red="0.71452758510000003" green="0.83713050830000002" blue="0.8345784557" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
+                                    <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="eSV-WQ-VzD"/>
                                     <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="5vw-J4-9Ox"/>
                                 </connections>
                             </button>
@@ -206,6 +207,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CT-gw-tgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rXB-MR-SDG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1716" y="-314.39280359820094"/>
         </scene>
