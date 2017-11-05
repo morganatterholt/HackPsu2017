@@ -21,7 +21,7 @@ class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     }*/
     @IBAction func PsychSubmit(_ sender: Any)
     {
-        var responsePsych = PsychAnswer.text!
+        let responsePsych = PsychAnswer.text!
         //post_request
         print(responsePsych)
     }

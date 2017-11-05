@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -100,19 +100,6 @@
                                     <segue destination="wjG-rW-ZSi" kind="show" identifier="2Physics_Quiz" id="DIK-be-KBc"/>
                                 </connections>
                             </button>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqR-Na-Hug">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="506"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he1-Qe-wxs">
-                                <rect key="frame" x="268" y="549" width="107" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="Physics_Quiz:" destination="FMp-ug-8qt" eventType="touchUpInside" id="vl4-0L-ibj"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="APQ-3h-7rJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="81D-u0-saY"/>
@@ -165,7 +152,6 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="PhysicsSubmit:" destination="wjG-rW-ZSi" eventType="touchUpInside" id="jU1-QC-GOA"/>
-                                    <action selector="back2phys:" destination="wjG-rW-ZSi" eventType="touchUpInside" id="7u6-an-RlX"/>
                                     <segue destination="aeT-bw-WmK" kind="show" identifier="back2physAR" id="3TQ-WU-Tqh"/>
                                 </connections>
                             </button>
@@ -205,15 +191,6 @@
                                 <connections>
                                     <action selector="Psych_Quiz:" destination="fFm-hf-imK" eventType="touchUpInside" id="4tD-u9-6po"/>
                                     <segue destination="lG7-xa-U75" kind="show" identifier="2Psych_Quiz" id="Qae-tJ-hAl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-gM-6j7">
-                                <rect key="frame" x="253" y="541" width="91" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="Psych_Quiz:" destination="fFm-hf-imK" eventType="touchUpInside" id="5gM-RO-C5e"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="2menu1" id="vTY-Km-vXg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -274,7 +251,6 @@
                                 <connections>
                                     <action selector="Back2psych:" destination="lG7-xa-U75" eventType="touchUpInside" id="cX0-xF-6OI"/>
                                     <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="TdV-y3-GNX"/>
-                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="V3u-ay-7MC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -299,9 +275,7 @@
         <image name="back" width="736" height="1309"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qae-tJ-hAl"/>
         <segue reference="4a4-Yb-JqC"/>
         <segue reference="3TQ-WU-Tqh"/>
-        <segue reference="vTY-Km-vXg"/>
     </inferredMetricsTieBreakers>
 </document>

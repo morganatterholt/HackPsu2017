@@ -14,7 +14,7 @@ class Physics_Quiz: UIViewController {
     @IBOutlet weak var PhysicsAnswer: UITextField!
     @IBAction func PhysicsSubmit(_ sender: Any)
     {
-        var responsePhysics = PhysicsAnswer.text!
+        let responsePhysics = PhysicsAnswer.text!
         print(responsePhysics)
         //postrequest
     }
