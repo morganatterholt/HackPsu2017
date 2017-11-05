@@ -9,20 +9,14 @@
 import UIKit
 import ARKit
 import SceneKit
-import SpriteKit
 class Psychology: UIViewController {
 
-    @IBOutlet var ARofPsych: ARSCNView!
+    @IBOutlet weak var PsychAR: ARSCNView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
-        //sceneView.session.run(configuration)
-        let cubeNode = SCNNode(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0))
-        cubeNode.position=SCNVector3(0,0,-0.2)//This is in meters
-        //sceneView.scene.rootNode.addChildNode(cubeNode)
+        
     }
 
     override func didReceiveMemoryWarning() {

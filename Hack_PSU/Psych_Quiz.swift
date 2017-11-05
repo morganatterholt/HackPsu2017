@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Psych_Quiz: UIViewController {
+
+class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var PsychQuestion: UILabel!
     @IBOutlet weak var PsychAnswer: UITextField!
     @IBAction func PsychSubmit(_ sender: Any)
