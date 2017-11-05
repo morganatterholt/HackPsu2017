@@ -30,17 +30,18 @@ class ViewController: UIViewController {
         performSegue(withIdentifier: "2Physics_Quiz", sender: self)
     }
     
+    @IBAction func DIscovery_Psych(_ sender: Any) {
+        performSegue(withIdentifier: "2Discovery_Psych", sender: self)
+    }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds); backgroundImage.image = UIImage(named: "back1.jpg"); backgroundImage.contentMode = UIViewContentMode.scaleAspectFill; self.view.insertSubview(backgroundImage, at: 0)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
