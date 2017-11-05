@@ -7,9 +7,17 @@
 //
 
 import UIKit
-
+import "Package.swift"
 class Psych_Quiz: UIViewController {
-
+    @IBOutlet weak var PsychQuestion: UILabel!
+    @IBOutlet weak var PsychAnswer: UITextField!
+    @IBAction func PsychSubmit(_ sender: Any)
+    {
+        var responsePsych = PsychAnswer.text!
+        //post_request
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -7,9 +7,17 @@
 //
 
 import UIKit
-
+import "Package.swift"
 class Physics_Quiz: UIViewController {
-
+    @IBOutlet weak var PhysicsQuestion: UILabel!
+    @IBOutlet weak var PhysicsAnswer: UITextField!
+    @IBAction func PhysicsSubmit(_ sender: Any)
+    {
+        var responsePhysics = PhysicsAnswer.text!
+        print(responsePhysics)
+        //postrequest
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
