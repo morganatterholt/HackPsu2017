@@ -241,11 +241,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-dA-KC9">
-                                <rect key="frame" x="16" y="131" width="343" height="43"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-dA-KC9">
+                                <rect key="frame" x="85" y="153" width="205" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the architecture in the last slide?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-PF-VUg">
                                 <rect key="frame" x="32" y="40" width="310" height="50"/>
@@ -254,34 +255,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2G-cx-he2">
-                                <rect key="frame" x="262" y="237" width="97" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5e-fZ-yDy">
+                                <rect key="frame" x="31" y="318" width="100" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.49938582190000003" green="0.6675494058" blue="0.83713050830000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="Back2psych:" destination="lG7-xa-U75" eventType="touchUpInside" id="yM9-Rt-QXZ"/>
-                                    <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="ehM-FL-8Fn"/>
-                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="ulW-tm-yqU"/>
-                                    <segue destination="xhT-6l-gC4" kind="show" identifier="back2psychAR" id="4a4-Yb-JqC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkS-X6-Uhy">
-                                <rect key="frame" x="32" y="237" width="97" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.49938582190000003" green="0.6675494058" blue="0.83713050830000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
-                                    <action selector="Back2psych:" destination="lG7-xa-U75" eventType="touchUpInside" id="cX0-xF-6OI"/>
-                                    <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="TdV-y3-GNX"/>
-                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="V3u-ay-7MC"/>
+                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="4dN-VP-h5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGU-p3-zEd">
+                                <rect key="frame" x="242" y="318" width="100" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Back2Psych:" destination="lG7-xa-U75" eventType="touchUpInside" id="gJ4-UR-KLw"/>
+                                    <segue destination="xhT-6l-gC4" kind="show" identifier="Back2Psych" id="tnN-Bi-rM1"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="egw-4u-Ttp" firstAttribute="trailing" secondItem="nw4-dA-KC9" secondAttribute="trailing" constant="89" id="lF2-WE-FgE"/>
-                            <constraint firstItem="nw4-dA-KC9" firstAttribute="leading" secondItem="egw-4u-Ttp" secondAttribute="leading" constant="88" id="wnE-0a-1Kf"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="egw-4u-Ttp"/>
                     </view>
                     <connections>
@@ -290,7 +281,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7CT-gw-tgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="rXB-MR-SDG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1716" y="-314.39280359820094"/>
         </scene>
@@ -299,9 +289,8 @@
         <image name="back" width="736" height="1309"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qae-tJ-hAl"/>
-        <segue reference="4a4-Yb-JqC"/>
+        <segue reference="tnN-Bi-rM1"/>
         <segue reference="3TQ-WU-Tqh"/>
-        <segue reference="vTY-Km-vXg"/>
+        <segue reference="APQ-3h-7rJ"/>
     </inferredMetricsTieBreakers>
 </document>

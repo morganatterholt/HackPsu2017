@@ -13,21 +13,16 @@ import ARKit
 class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var PsychQuestion: UILabel!
     @IBOutlet weak var PsychAnswer: UITextField!
-    /*@IBAction func PsychSubmit(_ sender: Any)
-    {
-        var responsePsych = PsychAnswer.text!
-        //post_request
-        print(responsePsych)
-    }*/
-    @IBAction func PsychSubmit(_ sender: Any)
-    {
-        var responsePsych = PsychAnswer.text!
-        //post_request
+    
+   
+    @IBAction func PsychSubmit(_ sender: Any) {
+        
+        let responsePsych = PsychAnswer.text!
         print(responsePsych)
     }
-    @IBAction func Back2psych(_ sender: Any)
-    {
-        performSegue(withIdentifier: "back2psychAR", sender: self)
+    
+    @IBAction func Back2Psych(_ sender: Any) {
+        performSegue(withIdentifier: "Back2Psych", sender: self)
     }
     
     override func viewDidLoad() {
