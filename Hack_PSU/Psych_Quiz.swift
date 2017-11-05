@@ -7,21 +7,33 @@
 //
 
 import UIKit
-
+import SceneKit
+import ARKit
 
 class Psych_Quiz: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var PsychQuestion: UILabel!
     @IBOutlet weak var PsychAnswer: UITextField!
+    /*@IBAction func PsychSubmit(_ sender: Any)
+    {
+        var responsePsych = PsychAnswer.text!
+        //post_request
+        print(responsePsych)
+    }*/
     @IBAction func PsychSubmit(_ sender: Any)
     {
         var responsePsych = PsychAnswer.text!
         //post_request
         print(responsePsych)
     }
+    @IBAction func Back2psych(_ sender: Any)
+    {
+        performSegue(withIdentifier: "back2psychAR", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds); backgroundImage.image = UIImage(named: "back1.jpg"); backgroundImage.contentMode = UIViewContentMode.scaleAspectFill; self.view.insertSubview(backgroundImage, at: 0)
     }
 
     override func didReceiveMemoryWarning() {

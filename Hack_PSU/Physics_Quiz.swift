@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SceneKit
+import UIKit
 class Physics_Quiz: UIViewController {
     @IBOutlet weak var PhysicsQuestion: UILabel!
     @IBOutlet weak var PhysicsAnswer: UITextField!
@@ -17,9 +19,12 @@ class Physics_Quiz: UIViewController {
         //postrequest
     }
     
+    @IBAction func back2phys(_ sender: Any) {
+        performSegue(withIdentifier: "back2physAR", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+let backgroundImage = UIImageView(frame: UIScreen.main.bounds); backgroundImage.image = UIImage(named: "back1.jpg"); backgroundImage.contentMode = UIViewContentMode.scaleAspectFill; self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
     }
 

@@ -9,13 +9,15 @@
 import UIKit
 import ARKit
 import SceneKit
+
 class Psychology: UIViewController {
 
-    @IBOutlet weak var PsychAR: ARSCNView!
-    
+    @IBOutlet var PsychAR: ARSCNView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let scene = SCNScene()
+        PsychAR.scene = scene
         
     }
 

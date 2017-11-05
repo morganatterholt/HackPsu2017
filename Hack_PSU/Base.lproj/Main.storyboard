@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -87,22 +87,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLY-tA-vK5">
-                                <rect key="frame" x="164" y="447" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="U9b-g4-2ww">
+                                <rect key="frame" x="0.0" y="503" width="375" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLY-tA-vK5">
+                                <rect key="frame" x="16" y="549" width="107" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take the quiz"/>
                                 <connections>
                                     <action selector="Physics_Quiz:" destination="FMp-ug-8qt" eventType="touchUpInside" id="UN9-gh-yT7"/>
                                     <segue destination="wjG-rW-ZSi" kind="show" identifier="2Physics_Quiz" id="DIK-be-KBc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hey" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ort-Dh-Ipi">
-                                <rect key="frame" x="84" y="546" width="97" height="30"/>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqR-Na-Hug">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="506"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he1-Qe-wxs">
+                                <rect key="frame" x="268" y="549" width="107" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Physics_Quiz:" destination="FMp-ug-8qt" eventType="touchUpInside" id="vl4-0L-ibj"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="APQ-3h-7rJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="81D-u0-saY"/>
@@ -111,7 +121,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNL-Cl-H4G" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="FMp-ug-8qt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="881" y="453"/>
+            <point key="canvasLocation" x="880.79999999999995" y="452.92353823088462"/>
         </scene>
         <!--Physics Quiz-->
         <scene sceneID="Nzq-Co-mr6">
@@ -121,15 +131,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question for physics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeQ-rR-gKA">
-                                <rect key="frame" x="109" y="73" width="157" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="wlT-vy-igC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the thitrd law of motion?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeQ-rR-gKA">
+                                <rect key="frame" x="64" y="43" width="247" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPI-sT-AMY">
-                                <rect key="frame" x="139" y="350" width="97" height="53"/>
+                                <rect key="frame" x="64" y="254" width="97" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49938582190000003" green="0.6675494058" blue="0.83713050830000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Submit"/>
@@ -138,14 +152,25 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exW-bh-FOc">
-                                <rect key="frame" x="109" y="169" width="157" height="30"/>
+                                <rect key="frame" x="33" y="129" width="326" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SV-yC-blC">
+                                <rect key="frame" x="262" y="254" width="97" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49938582190000003" green="0.6675494058" blue="0.83713050830000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="PhysicsSubmit:" destination="wjG-rW-ZSi" eventType="touchUpInside" id="jU1-QC-GOA"/>
+                                    <action selector="back2phys:" destination="wjG-rW-ZSi" eventType="touchUpInside" id="7u6-an-RlX"/>
+                                    <segue destination="aeT-bw-WmK" kind="show" identifier="back2physAR" id="3TQ-WU-Tqh"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="ga5-tg-Chm"/>
                     </view>
                     <connections>
@@ -165,24 +190,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hey2" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTZ-2r-mYZ">
-                                <rect key="frame" x="139" y="534" width="97" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="JOC-ui-Zkx">
+                                <rect key="frame" x="0.0" y="495" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </imageView>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="PsychAR.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9S-MB-T0V">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="506"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z98-g4-CZZ">
-                                <rect key="frame" x="274" y="530" width="65" height="34"/>
+                                <rect key="frame" x="16" y="541" width="91" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Take the quiz"/>
                                 <connections>
                                     <action selector="Psych_Quiz:" destination="fFm-hf-imK" eventType="touchUpInside" id="4tD-u9-6po"/>
                                     <segue destination="lG7-xa-U75" kind="show" identifier="2Psych_Quiz" id="Qae-tJ-hAl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-gM-6j7">
+                                <rect key="frame" x="253" y="541" width="91" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Psych_Quiz:" destination="fFm-hf-imK" eventType="touchUpInside" id="5gM-RO-C5e"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="2menu1" id="vTY-Km-vXg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -190,7 +221,7 @@
                         <viewLayoutGuide key="safeArea" id="CEL-cB-BYi"/>
                     </view>
                     <connections>
-                        <outlet property="PsychAR" destination="j9S-MB-T0V" id="Pux-5l-Atu"/>
+                        <outlet property="PsychAR" destination="j9S-MB-T0V" id="tuc-5b-Pbu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykd-CF-c5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -206,36 +237,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hm-Aw-U7R">
-                                <rect key="frame" x="133" y="522" width="109" height="30"/>
-                                <color key="backgroundColor" red="0.71452758510000003" green="0.83713050830000002" blue="0.8345784557" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="eSV-WQ-VzD"/>
-                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="5vw-J4-9Ox"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-dA-KC9">
-                                <rect key="frame" x="88" y="209" width="198" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Wol-l1-CjE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nw4-dA-KC9">
+                                <rect key="frame" x="16" y="131" width="343" height="43"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-PF-VUg">
-                                <rect key="frame" x="118" y="76" width="150" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the architecture in the last slide?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-PF-VUg">
+                                <rect key="frame" x="32" y="40" width="310" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2G-cx-he2">
+                                <rect key="frame" x="262" y="237" width="97" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49938582190000003" green="0.6675494058" blue="0.83713050830000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Back2psych:" destination="lG7-xa-U75" eventType="touchUpInside" id="yM9-Rt-QXZ"/>
+                                    <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="ehM-FL-8Fn"/>
+                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="ulW-tm-yqU"/>
+                                    <segue destination="xhT-6l-gC4" kind="show" identifier="back2psychAR" id="4a4-Yb-JqC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkS-X6-Uhy">
+                                <rect key="frame" x="32" y="237" width="97" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.49938582190000003" green="0.6675494058" blue="0.83713050830000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="Back2psych:" destination="lG7-xa-U75" eventType="touchUpInside" id="cX0-xF-6OI"/>
+                                    <action selector="DIscovery_Psych:" destination="rXB-MR-SDG" eventType="touchUpInside" id="TdV-y3-GNX"/>
+                                    <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="V3u-ay-7MC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2hm-Aw-U7R" firstAttribute="top" secondItem="nw4-dA-KC9" secondAttribute="bottom" constant="283" id="1bi-Zr-rxV"/>
-                            <constraint firstItem="egw-4u-Ttp" firstAttribute="trailing" secondItem="2hm-Aw-U7R" secondAttribute="trailing" constant="133" id="A9u-lm-6do"/>
-                            <constraint firstItem="2hm-Aw-U7R" firstAttribute="leading" secondItem="egw-4u-Ttp" secondAttribute="leading" constant="133" id="Iq7-mM-Ahq"/>
-                            <constraint firstItem="egw-4u-Ttp" firstAttribute="bottom" secondItem="2hm-Aw-U7R" secondAttribute="bottom" constant="115" id="QJ8-Ik-yKq"/>
-                            <constraint firstItem="2hm-Aw-U7R" firstAttribute="top" secondItem="nw4-dA-KC9" secondAttribute="bottom" constant="283" id="dRx-Cp-ChC"/>
                             <constraint firstItem="egw-4u-Ttp" firstAttribute="trailing" secondItem="nw4-dA-KC9" secondAttribute="trailing" constant="89" id="lF2-WE-FgE"/>
                             <constraint firstItem="nw4-dA-KC9" firstAttribute="leading" secondItem="egw-4u-Ttp" secondAttribute="leading" constant="88" id="wnE-0a-1Kf"/>
                         </constraints>
@@ -255,4 +298,10 @@
     <resources>
         <image name="back" width="736" height="1309"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qae-tJ-hAl"/>
+        <segue reference="4a4-Yb-JqC"/>
+        <segue reference="3TQ-WU-Tqh"/>
+        <segue reference="vTY-Km-vXg"/>
+    </inferredMetricsTieBreakers>
 </document>
