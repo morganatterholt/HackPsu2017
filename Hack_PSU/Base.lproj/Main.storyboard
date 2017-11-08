@@ -57,7 +57,7 @@
                                 <rect key="frame" x="87" y="303" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82265275519360537" green="0.84984403213268611" blue="0.83872260005610977" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Psychology">
+                                <state key="normal" title="Aeorscience">
                                     <color key="titleColor" red="0.56294174760000004" green="0.49744929409999999" blue="0.56971651320000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -100,6 +100,22 @@
                                     <segue destination="wjG-rW-ZSi" kind="show" identifier="2Physics_Quiz" id="DIK-be-KBc"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="he1-Qe-wxs">
+                                <rect key="frame" x="268" y="549" width="107" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Physics_Quiz:" destination="FMp-ug-8qt" eventType="touchUpInside" id="vl4-0L-ibj"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="APQ-3h-7rJ"/>
+                                </connections>
+                            </button>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LoX-gW-cQ1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="495"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+>>>>>>> reverse2.0
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="81D-u0-saY"/>
@@ -122,7 +138,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the thitrd law of motion?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeQ-rR-gKA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the third law of motion?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeQ-rR-gKA">
                                 <rect key="frame" x="64" y="43" width="247" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -180,10 +196,6 @@
                                 <rect key="frame" x="0.0" y="495" width="375" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" sceneName="PsychAR.scn" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9S-MB-T0V">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="506"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z98-g4-CZZ">
                                 <rect key="frame" x="16" y="541" width="91" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -193,12 +205,28 @@
                                     <segue destination="lG7-xa-U75" kind="show" identifier="2Psych_Quiz" id="Qae-tJ-hAl"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfq-gM-6j7">
+                                <rect key="frame" x="253" y="541" width="91" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Psych_Quiz:" destination="fFm-hf-imK" eventType="touchUpInside" id="5gM-RO-C5e"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="2menu1" id="vTY-Km-vXg"/>
+                                </connections>
+                            </button>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66K-zh-PlY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="487"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+>>>>>>> reverse2.0
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="CEL-cB-BYi"/>
                     </view>
                     <connections>
-                        <outlet property="PsychAR" destination="j9S-MB-T0V" id="tuc-5b-Pbu"/>
+                        <outlet property="sceneView" destination="66K-zh-PlY" id="EMh-CK-txr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykd-CF-c5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -225,7 +253,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the architecture in the last slide?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-PF-VUg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How does the airplane get its lift?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNt-PF-VUg">
                                 <rect key="frame" x="32" y="40" width="310" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -238,6 +266,8 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="PsychSubmit:" destination="lG7-xa-U75" eventType="touchUpInside" id="4dN-VP-h5F"/>
+                                    <action selector="final1:" destination="lG7-xa-U75" eventType="touchUpInside" id="Ac8-Ij-FUX"/>
+                                    <segue destination="hDo-fj-0DT" kind="show" identifier="final" id="g6o-Cd-oo8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGU-p3-zEd">
@@ -266,15 +296,47 @@
             </objects>
             <point key="canvasLocation" x="1716" y="-314.39280359820094"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hOL-3i-4Je">
+            <objects>
+                <viewController id="hDo-fj-0DT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24z-B5-K10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="S5c-uf-OgF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Watson Discovery API returned that your answer regarding &quot;wings&quot; and &quot;lift&quot; was a .89 confidence level." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQY-ZE-r6D">
+                                <rect key="frame" x="11" y="104" width="348" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hPX-BW-wMw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7h-bo-fgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.8000000000002" y="-267.61619190404798"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back" width="736" height="1309"/>
     </resources>
     <inferredMetricsTieBreakers>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <segue reference="4a4-Yb-JqC"/>
         <segue reference="3TQ-WU-Tqh"/>
 =======
+=======
+        <segue reference="DIK-be-KBc"/>
+>>>>>>> reverse2.0
         <segue reference="tnN-Bi-rM1"/>
         <segue reference="3TQ-WU-Tqh"/>
         <segue reference="APQ-3h-7rJ"/>

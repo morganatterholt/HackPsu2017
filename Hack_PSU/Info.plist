@@ -28,7 +28,7 @@
 	<string>We need camera to show cool stuff</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string></string>
+		<string>armv7</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

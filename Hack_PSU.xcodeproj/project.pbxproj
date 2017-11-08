@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10BFBAE11FAF809F00F3CEB2 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BFBAE01FAF809F00F3CEB2 /* art.scnassets */; };
 		10C7AFB21FAEBA9A0063A892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C7AFB11FAEBA9A0063A892 /* Assets.xcassets */; };
 		902491951FAE6C3700AE5055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902491941FAE6C3700AE5055 /* AppDelegate.swift */; };
 		902491971FAE6C3700AE5055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902491961FAE6C3700AE5055 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10BFBAE01FAF809F00F3CEB2 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../Rocket/Rocket/art.scnassets; sourceTree = "<group>"; };
 		10C7AFB11FAEBA9A0063A892 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		902491911FAE6C3700AE5055 /* Hack_PSU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack_PSU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		902491941FAE6C3700AE5055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				902491941FAE6C3700AE5055 /* AppDelegate.swift */,
 				902491961FAE6C3700AE5055 /* ViewController.swift */,
 				902491A81FAE734000AE5055 /* Physics.swift */,
+				10BFBAE01FAF809F00F3CEB2 /* art.scnassets */,
 				902491A61FAE6D0400AE5055 /* Psychology.swift */,
 				902491AC1FAE775F00AE5055 /* Physics_Quiz.swift */,
 				902491AA1FAE772400AE5055 /* Psych_Quiz.swift */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9024919F1FAE6C3700AE5055 /* LaunchScreen.storyboard in Resources */,
+				10BFBAE11FAF809F00F3CEB2 /* art.scnassets in Resources */,
 				10C7AFB21FAEBA9A0063A892 /* Assets.xcassets in Resources */,
 				9024919A1FAE6C3700AE5055 /* Main.storyboard in Resources */,
 			);
